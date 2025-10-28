@@ -134,7 +134,7 @@ EXTRAS
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
@@ -151,14 +151,14 @@ EXTRAS
               <a class="nav-link" href="#recensioni">Recensioni</a>
             </li>
           </ul>
-          <div class="ms-3">
+          <div class="d-flex">
             <input
               type="text"
-              class="form-control w-auto"
+              class="form-control"
               placeholder="Cerca pool da sogno..."
             />
+            <button class="btn btn-outline-info ms-2">Cerca</button>
           </div>
-          <button class="btn btn-outline-info ms-2">Cerca</button>
         </div>
       </div>
     </nav>
@@ -743,20 +743,8 @@ EXTRAS
 
       // Aggiungi eventi al caricamento della pagina
       document.addEventListener("DOMContentLoaded", function () {
-        // Aggiungi pulsante per contare viaggi nella navbar
-        const navbar = document.querySelector(".navbar-nav");
-        const contaBtn = document.createElement("li");
-        contaBtn.className = "nav-item";
-        contaBtn.innerHTML =
-          '<button class="btn btn-sm btn-outline-info ms-2" onclick="contaViaggi()">Conta Viaggi</button>';
-        navbar.appendChild(contaBtn);
-
-        // Aggiungi pulsante per rimuovere card
-        const rimuoviBtn = document.createElement("li");
-        rimuoviBtn.className = "nav-item";
-        rimuoviBtn.innerHTML =
-          '<button class="btn btn-sm btn-outline-danger ms-2" onclick="rimuoviTutteLeCard()">Rimuovi Card</button>';
-        navbar.appendChild(rimuoviBtn);
+        // Script di inizializzazione
+        console.log("Pagina caricata correttamente");
       });
     </script>
   </body>
