@@ -1,7 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eveline-R - Feel the Freedom</title>
 
-<head>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
 
@@ -92,8 +106,658 @@ EXTRAS
 17) Crea una funzione che rimuova tutte le "card" dalla pagina
 
 -->
-</head>
+  </head>
 
-<body></body>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <img
+            src="L2-screens/logo.png"
+            alt="Eveline-R Logo"
+            height="40"
+            class="me-2"
+          />
+        </a>
 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#saldi">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#last-minute">Last Minute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recensioni">Recensioni</a>
+            </li>
+          </ul>
+          <div class="ms-3">
+            <input
+              type="text"
+              class="form-control w-auto"
+              placeholder="Cerca pool da sogno..."
+            />
+          </div>
+          <button class="btn btn-outline-info ms-2">Cerca</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sezione Introduttiva -->
+    <section id="home" class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="bg-light rounded-3 p-5 text-center">
+            <h1 class="display-4 text-dark mb-2">Eveline-R</h1>
+            <p class="text-muted mb-3 fs-6">— Feel the Freedom</p>
+            <p class="fst-italic text-secondary mb-4">
+              Scopri le destinazioni più calde del momento!
+            </p>
+            <button class="btn btn-info text-white fw-bold px-4 py-2">
+              Prenota ora
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Saldi -->
+    <section id="saldi" class="container my-5">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h2 class="text-dark">Saldi</h2>
+          <a href="#" class="text-info text-decoration-none">Mostra tutti</a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card border-info border-2">
+            <img
+              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus eleusque adefendum lorem voluptua alitera repudiandae
+                eleusque adefendum lorem voluptua eleusque lorem nostris ipsumos
+                temporibus.
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card border-info border-2">
+            <img
+              src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus eleusque adefendum lorem voluptua alitera repudiandae
+                eleusque adefendum lorem voluptua eleusque lorem nostris ipsumos
+                temporibus.
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card border-info border-2">
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus eleusque adefendum lorem voluptua alitera repudiandae
+                eleusque adefendum lorem voluptua eleusque lorem nostris ipsumos
+                temporibus.
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card border-info border-2">
+            <img
+              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus eleusque adefendum lorem voluptua alitera repudiandae
+                eleusque adefendum lorem voluptua eleusque lorem nostris ipsumos
+                temporibus.
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Welcome Summer -->
+    <section id="welcome-summer" class="container my-5">
+      <div class="row mb-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <h2 class="text-dark mb-0">Welcome Summer</h2>
+          <a href="#" class="text-info text-decoration-none"
+            >Nascondi sezione</a
+          >
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-xxl-2 col-lg-4 col-md-6 col-6">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione estate 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus alitera repudiandae eleusque adefendum lorem voluptua
+                nostris ipsumos temporibus mauriaus reipubulae!
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-xxl-2 col-lg-4 col-md-6 col-6">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione estate 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus alitera repudiandae eleusque adefendum lorem voluptua
+                nostris ipsumos temporibus mauriaus reipubulae!
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-xxl-2 col-lg-4 col-md-6 col-6">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione estate 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus alitera repudiandae eleusque adefendum lorem voluptua
+                nostris ipsumos temporibus mauriaus reipubulae!
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-xxl-2 col-lg-4 col-md-6 col-6">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione estate 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus alitera repudiandae eleusque adefendum lorem voluptua
+                nostris ipsumos temporibus mauriaus reipubulae!
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-xxl-2 col-lg-4 col-md-6 col-6">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione estate 5"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus alitera repudiandae eleusque adefendum lorem voluptua
+                nostris ipsumos temporibus mauriaus reipubulae!
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-xxl-2 col-lg-4 col-md-6 col-6">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              class="card-img-top"
+              alt="Destinazione estate 6"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Titolo</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipiscing elit. Officia
+                ut pocamus alitera repudiandae eleusque adefendum lorem voluptua
+                nostris ipsumos temporibus mauriaus reipubulae!
+              </p>
+              <button class="btn btn-info text-white">Prenota</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Offerta del giorno -->
+    <section class="container my-5">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h2 class="text-dark">Offerta del giorno</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Desktop layout -->
+        <div class="col-md-8 d-none d-md-block">
+          <img
+            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+            class="img-fluid rounded shadow"
+            alt="Offerta del giorno"
+          />
+        </div>
+        <div
+          class="col-md-4 d-none d-md-flex flex-column justify-content-center"
+        >
+          <div class="ps-4">
+            <h3 class="fs-2 mb-3">Fushifaru Maldives</h3>
+            <p class="font-monospace text-muted mb-3">15.01.2021-31.01.2021</p>
+            <p class="lead fw-bold text-dark mb-3">
+              Volo a partire da 500 €, non fartelo sfuggire!
+            </p>
+            <span class="badge bg-dark fs-6 px-3 py-2">best offer</span>
+          </div>
+        </div>
+
+        <!-- Mobile layout -->
+        <div class="col-12 d-md-none">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded shadow"
+                alt="Offerta del giorno"
+              />
+            </div>
+            <div class="col-7">
+              <h5 class="mb-1">Fushifaru Maldives</h5>
+              <p
+                class="font-monospace text-muted mb-1"
+                style="font-size: 0.75rem"
+              >
+                15.01.2021-31.01.2021
+              </p>
+              <p class="mb-2" style="font-size: 0.85rem">
+                Volo a partire da 500 €, non fartelo sfuggire!
+              </p>
+              <span class="badge bg-dark" style="font-size: 0.7rem"
+                >best offer</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Last Minute -->
+    <section id="last-minute" class="container my-5">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h2 class="text-dark">Last Minute</h2>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-xl-2 col-lg-4 col-md-4 col-6">
+          <div class="rounded shadow overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+              class="img-fluid w-100"
+              alt="Last minute 1"
+            />
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-4 col-6">
+          <div class="rounded shadow overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+              class="img-fluid w-100"
+              alt="Last minute 2"
+            />
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-4 col-6">
+          <div class="rounded shadow overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+              class="img-fluid w-100"
+              alt="Last minute 3"
+            />
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-4 col-6">
+          <div class="rounded shadow overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+              class="img-fluid w-100"
+              alt="Last minute 4"
+            />
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-4 col-6">
+          <div class="rounded shadow overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+              class="img-fluid w-100"
+              alt="Last minute 5"
+            />
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-4 col-6">
+          <div class="rounded shadow overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+              class="img-fluid w-100"
+              alt="Last minute 6"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Recensioni -->
+    <section id="recensioni" class="container my-5">
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h2 class="text-dark">Dicono di noi</h2>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <!-- Recensione 1 -->
+        <div class="col-12">
+          <div class="d-flex align-items-start">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+              class="rounded-circle border border-info border-2 me-3 flex-shrink-0"
+              width="60"
+              height="60"
+              alt="Utente 1"
+            />
+            <div class="flex-grow-1">
+              <h6 class="mb-1 fw-bold">Username</h6>
+              <p class="mb-0 text-muted small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recensione 2 -->
+        <div class="col-12">
+          <div class="d-flex align-items-start">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+              class="rounded-circle border border-info border-2 me-3 flex-shrink-0"
+              width="60"
+              height="60"
+              alt="Utente 2"
+            />
+            <div class="flex-grow-1">
+              <h6 class="mb-1 fw-bold">Username</h6>
+              <p class="mb-0 text-muted small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recensione 3 -->
+        <div class="col-12">
+          <div class="d-flex align-items-start">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+              class="rounded-circle border border-info border-2 me-3 flex-shrink-0"
+              width="60"
+              height="60"
+              alt="Utente 3"
+            />
+            <div class="flex-grow-1">
+              <h6 class="mb-1 fw-bold">Username</h6>
+              <p class="mb-0 text-muted small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="mb-3">© 2021 Kaiwa Travel LTD. All Rights Reserved.</h5>
+            <button
+              class="btn btn-info text-white"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              Contattaci
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modale Contatti -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contattaci</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="inserisci la tua email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Messaggio</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="scrivi il tuo messaggio"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Chiudi
+            </button>
+            <button type="button" class="btn btn-info text-white">Invia</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script personalizzati -->
+    <script>
+      // Funzione per contare il numero di viaggi
+      function contaViaggi() {
+        const cards = document.querySelectorAll(".card");
+        alert(`Ci sono ${cards.length} viaggi disponibili sulla pagina!`);
+      }
+
+      // Funzione per rimuovere tutte le card
+      function rimuoviTutteLeCard() {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card) => card.remove());
+        alert("Tutte le card sono state rimosse!");
+      }
+
+      // Aggiungi eventi al caricamento della pagina
+      document.addEventListener("DOMContentLoaded", function () {
+        // Aggiungi pulsante per contare viaggi nella navbar
+        const navbar = document.querySelector(".navbar-nav");
+        const contaBtn = document.createElement("li");
+        contaBtn.className = "nav-item";
+        contaBtn.innerHTML =
+          '<button class="btn btn-sm btn-outline-info ms-2" onclick="contaViaggi()">Conta Viaggi</button>';
+        navbar.appendChild(contaBtn);
+
+        // Aggiungi pulsante per rimuovere card
+        const rimuoviBtn = document.createElement("li");
+        rimuoviBtn.className = "nav-item";
+        rimuoviBtn.innerHTML =
+          '<button class="btn btn-sm btn-outline-danger ms-2" onclick="rimuoviTutteLeCard()">Rimuovi Card</button>';
+        navbar.appendChild(rimuoviBtn);
+      });
+    </script>
+  </body>
 </html>
